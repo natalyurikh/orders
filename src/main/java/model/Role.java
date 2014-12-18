@@ -1,4 +1,4 @@
-package entity;
+package model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +9,7 @@ import javax.persistence.Table;
  * @author Natalya_Urikh
  */
 @Entity
-@Table(name = "ROLES")
+@Table(name = "ROLE")
 public class Role
 {
 	@Id

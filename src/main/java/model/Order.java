@@ -1,4 +1,4 @@
-package entity;
+package model;
 
 import org.joda.time.DateTime;
 
@@ -18,9 +18,6 @@ public class Order
 
 	@Column(name = "ORDER_NUMBER")
 	private  String orderNumber;
-
-	@Column(name = "ORDER_DATE")
-	private DateTime orderDate;
 
 	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn(name = "SOURCE_ID")
@@ -57,16 +54,6 @@ public class Order
 	public void setOrderNumber(String orderNumber)
 	{
 		this.orderNumber = orderNumber;
-	}
-
-	public DateTime getOrderDate()
-	{
-		return orderDate;
-	}
-
-	public void setOrderDate(DateTime orderDate)
-	{
-		this.orderDate = orderDate;
 	}
 
 	public OrderSource getSourceType()

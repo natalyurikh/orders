@@ -1,4 +1,4 @@
-package entity;
+package model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "DEVICES")
+@Table(name = "DEVICE")
 public class Device
 {
 	@Id
@@ -20,7 +20,7 @@ public class Device
 	@Column(name = "MODEL")
 	private String model;
 
-	@Column(name = "SERIAL_Number")
+	@Column(name = "Serial_Number")
 	private String serialNumber;
 
 	@Column(name = "DEFECT")

@@ -1,4 +1,4 @@
-package entity;
+package model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +10,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "ORDER_STATUSES")
+@Table(name = "ORDER_STATUS")
 public class OrderStatus
 {
 	@Id
