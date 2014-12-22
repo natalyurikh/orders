@@ -24,3 +24,4 @@ public class Runner
 
 	}
 }
+//http://wordgraphs.com/post/604/Generic-DAO-design-pattern-with-Java---Hibernate
