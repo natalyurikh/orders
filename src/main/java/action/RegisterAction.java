@@ -2,13 +2,14 @@ package action;
 
 
 import model.User;
+import service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class RegisterAction implements Action {
 
-    RegisterService service = new RegisterService();
+    UserService service = new UserService();
 
     @Override
     public ActionResult execute(HttpServletRequest req, HttpServletResponse resp) {

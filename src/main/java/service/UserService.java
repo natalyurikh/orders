@@ -10,10 +10,16 @@ import java.util.List;
  */
 public class UserService
 {
+	private UserDao userDao = new UserDao();
+
+	public void register(User user)
+	{
+		userDao.save(user);
+	}
+
 	public List<User> findAll()
 	{
 		System.out.println(this.getClass() + ". Find all");
-		UserDao userDao = new UserDao();
 		return userDao.findAll();
 	}
 
